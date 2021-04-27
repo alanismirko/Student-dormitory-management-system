@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - STUDO</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    
+    <div style="        background-color: #ddecfa;" class="navbar navbar-inverse navbar-fixed-top">
+      
+        
+        <div class="container">
+            <div class="navbar-header">
+                
+                <img src="~/Pictures/logo2.png" />
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Catalog", "Rooms", "Rooms")</li>
+                    <li>@Html.ActionLink("Help page", "HelpPage", "Home")</li>
+                </ul>
+                        @Html.Partial("_LoginPartial")
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <div style="background-color:skyblue;" class="jumbotron">
+            <img src="~/Pictures/logo.png" />
+            <p class="lead">
+                System that makes the booking process easy for students, and management of dormitories easier.
+            </p>
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - STUDO [Group2, UCN]</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

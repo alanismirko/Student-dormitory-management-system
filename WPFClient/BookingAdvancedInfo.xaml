@@ -1,0 +1,23 @@
+﻿<Window x:Class="WPFClient.BookingAdvancedInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d"
+        Title="BookingAdvancedInfo" Height="268.2" Width="701">
+    <Grid Margin="0,0,6.8,9.2">
+        <Label Content="Room Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,50,0,0"/>
+        <Label Content="Date of creation:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,100,0,0"/>
+        <Label Content="Student full name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,150,0,0"/>
+        <Label Content="Student mail:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="314,50,0,0"/>
+        <Label Content="Booking Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,6,0,0"/>
+        <Label Name="BookingID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="175,9,0,0"/>
+        <Label Name="RoomNumber" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,50,0,0"/>
+        <Label Name="DateOfCreation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,100,0,0"/>
+        <Label Name="StudentName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,150,0,0"/>
+        <Label Name="StudentMail" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="410,50,0,0"/>
+
+
+    </Grid>
+</Window>

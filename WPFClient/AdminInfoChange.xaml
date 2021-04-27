@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFClient.AdminInfoChange"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d"
+        Title="AdminInfoChange" Height="450" Width="800">
+    <Grid>
+        <Label Content="First name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,70,0,0"/>
+        <Label Content="Last name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,120,0,0"/>
+        <Label Content="Email:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,170,0,0"/>
+        <Label Content="Phone Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,220,0,0"/>
+        <Label Content="Employee number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,270,0,0"/>
+        <Label Name="employeeNumberField" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,270,0,0"/>
+        <TextBox Name="firstNameField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,70,0,0"/>
+        <TextBox Name="lastNameField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,120,0,0"/>
+        <TextBox Name="emailField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,170,0,0"/>
+        <TextBox Name="phoneNumberField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="250,220,0,0"/>
+        <Button Content="Submint changes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="137" Margin="453,340,0,0" Height="32" Click="button_Click"/>
+        <Label Name="responseField" HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="414" Margin="25,317,0,0"/>
+
+    </Grid>
+</Window>

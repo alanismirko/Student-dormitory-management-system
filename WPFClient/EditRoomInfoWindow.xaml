@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPFClient.EditRoomInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFClient"
+        mc:Ignorable="d"
+        Title="EditRoomInfoWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Room Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,50,0,0"/>
+        <Label Content="Floor:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,100,0,0"/>
+        <Label Content="Capacity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,150,0,0"/>
+        <Label Content="Area:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,50,0,0"/>
+        <Label Content="Price" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,100,0,0"/>
+        <Label Content="Description:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="400,150,0,0"/>
+        <TextBox Name="roomNumberField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="165,50,0,0"/>
+        <TextBox Name="floorField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="165,100,0,0"/>
+        <TextBox Name="capacityField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="165,150,0,0"/>
+        <TextBox Name="areaField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,50,0,0"/>
+        <TextBox Name="priceField" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="510,100,0,0"/>
+        <TextBox Name="descriptionField" HorizontalAlignment="Left" Height="97" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Margin="510,150,0,0"/>
+        <Button Content="Apply changes" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" Margin="605,302,0,0" Height="28" Click="button_Click"/>
+        <Label Name="responseField" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="62,249,0,0" Height="94" Width="430"/>
+        <Label Name="idField" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139,6,0,0"/>
+        <Label Content="Room Id:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,6,0,0"/>
+
+    </Grid>
+</Window>
